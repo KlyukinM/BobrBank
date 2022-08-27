@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="images/favicon.png">
+    <title>БОБРБАНК</title>
+</head>
+<body>
+    <div class="wrapper hide">
+        <header class="header">
+            <div class="header__container">
+                <a href="https://bobrarium.ru/bobrbank"><div class="header__logo"></div></a>
+                <a href="https://bobrarium.ru/bobrbank"><div class="header__title">Бобр<span>банк</span></div></a> 
+                <div class="header__subtitle">Для тех, кому <span>нечего терять</span></div>                    
+            </div>
+        </header>
+        <nav class="navigation lock-padding">
+            <div class="navigation__container">
+                <div class="navigation__buttons">
+                    <a href="https://bobrarium.ru/bobrbank"><button>Кредит</button></a>
+                    <a href="https://bobrarium.ru/bobrbank/investments.html"><button>Инвестиции</button></a>
+                    <a href="https://bobrarium.ru/bobrbank/kidney_card.html"><button>Карта рассрочки</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="content__container">
+                
+                <div class="kidney__card">
+                    <div class="block__title">Счет для инвестиций</div>                
+                    <div class="kidney__container">
+                        <div class="kidney__card__picture__invest">
+                            <img src="images/bobrinvest.png" alt="">
+                        </div>
+                        <div class="kidney__card__description__invest">
+                            <div class="kidney__card__description__slogan">Инструменты для любого инвестиционного портфеля*</div>
+                            <div class="kidney__card__description__conditions">* Почти</div>
+                            <div class="kidney__card__description__title">Акции</div>
+                            <div class="kidney__card__description__text">Покупка доли в ведущих финансовых пузырях, как российских, так и мировых</div>
+                            <div class="kidney__card__description__title">Облигации</div>
+                            <div class="kidney__card__description__text">Инструмент с гарантированным доходом ниже инфляции</div>
+                            <div class="kidney__card__description__title">ETF</div>
+                            <div class="kidney__card__description__text">Инвестиции в целые страны и галактики при помощи одного инструмента</div>
+                            <div class="kidney__card__description__title">Валюта</div>
+                            <div class="kidney__card__description__text">Покупка бобрублей по биржевому курсу выгоднее, чем в обменниках</div>
+                        </div>
+                    </div>
+                    <div class="spoiler">
+                        <div class="contact__info__container__kidney">
+                            <div class="client__name__container__kidney">
+                                <input type="text" name="client__name" id="client__name" placeholder="Фамилия, Имя и Отчество">
+                            </div>
+                            <div class="client__phone__container__kidney">
+                                <input type="text" name="client__phone" id="client__phone" placeholder="Мобильный телефон" maxlength="17" data-phone-pattern>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit__button__container">                                
+                        <button type="submit" class="submit__button">Открыть счет</button>                                                              
+                    </div>
+                </div>
+                <div class="advantages">
+                    <div class="advantages__title">Преимущества БобрИнвест</div>
+                    <div class="advantages__container">
+                        <div class="advantage__first">
+                            <div class="advantage__first__image__invest"></div>
+                            <div class="advantage__title">Гарантии</div>
+                            <div class="advantage__description">Нашего заработка и никаких гарантий для Вас</div>
+                        </div>
+                        <div class="advantage__second">
+                            <div class="advantage__second__image__invest"></div>
+                            <div class="advantage__title">Непонятные тарифы</div>
+                            <div class="advantage__description">Вы всегда будете нам должны</div>
+                        </div>
+                        <div class="advantage__third">
+                            <div class="advantage__third__image__invest"></div>
+                            <div class="advantage__title">Неудобное приложение</div>
+                            <div class="advantage__description">Сделанное для того, чтобы воровать Ваши деньги</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Попап / высплывающие окна  -->
+        <div id="popup" class="popup">
+                
+            <!-- Создаем тело всплывающего окна -->
+            <div class="popup__body">
+                <!-- Создаем оболочку контента -->
+                <div class="popup__content">
+                    <!-- Создаем кнопку для закрытия -->
+                    <a href="#header" class="popup__close close-popup"></a>
+                    <!-- И сам контент -->
+                    <div class="popup__text__container">
+                        
+                    </div>               
+                </div>
+            </div>
+        </div>      
+        <footer>
+            <a href="https://bobrarium.ru/cv" target="_blank"><div class="signature">Made by Klyukin Mikhail</div></a>
+        </footer>
+        <script src="js/investments.js"></script>
+    </div>
+    <div class="loader">
+        <img src="./images/loading.gif" alt="">
+    </div>       
+</body>
+</html>
