@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/png" sizes="120x120" rel="icon" href="images/favicon.png">
+    <title>БОБРБАНК</title>
+</head>
+<body>
+    <div class="wrapper hide">
+        <header class="header">
+            <div class="header__container">
+                <a href="https://bobrarium.ru/bobrbank"><div class="header__logo"></div></a>
+                <a href="https://bobrarium.ru/bobrbank"><div class="header__title">Бобр<span>банк</span></div></a>   
+                <div class="header__subtitle">Для тех, кому <span>нечего терять</span></div>                    
+            </div>
+        </header>
+        <nav class="navigation lock-padding">
+            <div class="navigation__container">
+                <div class="navigation__buttons">
+                    <a href="https://bobrarium.ru/bobrbank"><button>Кредит</button></a>
+                    <a href="https://bobrarium.ru/bobrbank/investments.html"><button>Инвестиции</button></a>
+                    <a href="https://bobrarium.ru/bobrbank/kidney_card.html"><button>Карта рассрочки</button></a>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="content__container">
+                <div class="zalog">
+                    <div class="zalog__first">
+                        <div class="zalog__title">Под залог почки</div>
+                        <div class="zalog__content">
+                            <div class="zalog__description">
+                                <p>Лимит до 1 000 000 бобрублей.</p>
+                                <p>Срок до 5 лет.</p>
+                                <p>Почка остается у владельца.</p>
+                            </div>
+                            <div class="zalog__first__picture"></div>
+                        </div>                    
+                    </div>
+                    <div class="zalog__second">
+                        <div class="zalog__title">Под залог ушей</div>
+                        <div class="zalog__content">
+                            <div class="zalog__description">
+                                <p>Лимит до 300 000 бобрублей.</p>
+                                <p>Срок до 3 лет.</p>
+                                <p>Уши остаются у владельца.</p>
+                            </div>
+                            <div class="zalog__second__picture"></div>
+                        </div>                    
+                    </div>
+                    <div class="zalog__third">
+                        <div class="zalog__title">Под залог родственника</div>
+                        <div class="zalog__content">
+                            <div class="zalog__description">
+                                <p>Лимит до 10 000 000 бобрублей.</p>
+                                <p>Срок до 15 лет.</p>
+                                <p>Родственнику можно не говорить.</p>
+                            </div>
+                            <div class="zalog__third__picture"></div>
+                        </div>                    
+                    </div>
+                </div>                   
+                <div class="calculator">
+                    <form action="" name="calcForm" id="calcForm">
+                    <div class="calculator__container">
+                        <div class="title__of__block">Занять у бобров</div>
+                        <div class="calculator__input__container">
+                            <h2>Выберите сумму и срок кредита</h2>
+                            <div class="calculator__input__ranges">
+                                <div class="input__range__money">
+                                    <div class="calculator__title">Желаемая сумма кредита</div>
+                                    <div class="money__input__container string">
+                                        100 000 Б                                                                      
+                                    </div>
+                                    <input type="range" name="money__range" id="money__range" class="styled-slider" min="100000" max="10000000" value="100000" step="10000">                                 
+                                    <div class="calculator__comment">
+                                        <div class="calculator__comment__first">100 000 Б</div>
+                                        <div class="calculator__comment__second">10 000 000 Б</div>
+                                    </div>
+                                </div>
+                                <div class="input__range__term">
+                                    <div class="calculator__title">Срок кредита</div>
+                                    <div class="term__input__container string">
+                                        3 года
+                                    </div>
+                                    <input type="range" name="term__range" id="term__range" class="styled-slider" min="1" max="5" value="3" step="1">                                
+                                    <div class="calculator__comment term__comment">
+                                        <div class="term__comment__first">1 год</div>
+                                        <div class="term__comment__second">5 лет</div>
+                                    </div>
+                                </div>
+                                <div class="monthly__payment">
+                                    <div class="calculator__title">Ежемесячный платеж</div>
+                                    <div class="monthly__payment__result"></div>
+                                </div>                            
+                            </div>
+                            <div class="calculator__input__checkbox">
+                                <input type="checkbox" name="client__checkbox" id="client__checkbox">
+                                <label for="client__checkbox" class="calculator__title">Получаю зарплату на карту БОБРБАНК</label>
+                            </div>
+                            <div class="calculator__input__reason">
+                                <form>  
+                                    <div class="__select" data-state="">
+                                    <div class="__select__title" data-default="Option 0">Укажите цель кредита</div>
+                                    <div class="__select__content">
+                                        <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked disabled/>
+                                        <label for="singleSelect0" class="__select__label selected__label">Укажите цель кредита</label>
+                                        <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                        <label for="singleSelect1" class="__select__label">Скучно стало</label>
+                                        <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" />
+                                        <label for="singleSelect2" class="__select__label">Впечатлить соседей</label>
+                                        <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                        <label for="singleSelect3" class="__select__label">Что-то приуныл</label>
+                                        <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                        <label for="singleSelect4" class="__select__label">Жрать хочу</label>
+                                    </div>
+                                    </div>
+                                </form>                            
+                            </div>
+                            <div class="calculator__input__contact__info">
+                                <h2 class="contact__info__title">Контактная информация</h2>
+                                <div class="contact__info__container">
+                                    <div class="client__name__container">
+                                        <input type="text" name="client__name" id="client__name" placeholder="Фамилия, Имя и Отчество">
+                                    </div>
+                                    <div class="client__phone__container">
+                                        <input type="text" name="client__phone" id="client__phone" placeholder="Мобильный телефон" maxlength="17" data-phone-pattern>
+                                    </div>
+                                </div>
+                                <div class="submit__button__container">                                
+                                        <button type="submit" class="submit__button">Отправить заявку</button>                                                              
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calculator__results">
+                            <div class="calculator__results__container">
+                                <div class="calculator__result__title">Вы выбрали кредит на сумму</div>
+                                <div class="money__option calculator__result"></div>
+                                <div class="calculator__result__title">На срок</div>
+                                <div class="term__option calculator__result"></div>
+                                <div class="calculator__result__title">Под</div>
+                                <div class="rate__option calculator__result"></div>
+                            </div>                        
+                        </div>
+                    </div>
+                    </form>                
+                </div>
+                <div class="advantages">
+                    <div class="advantages__title">Преимущества нашего кредита</div>
+                    <div class="advantages__container">
+                        <div class="advantage__first">
+                            <div class="advantage__first__image"></div>
+                            <div class="advantage__title">Обобрение в день подачи заявки</div>
+                            <div class="advantage__description">Получение до 80% стоимости органов наличными сразу</div>
+                        </div>
+                        <div class="advantage__second">
+                            <div class="advantage__second__image"></div>
+                            <div class="advantage__title">Пользуйтесь органами в залоге</div>
+                            <div class="advantage__description">Банк не забирает Ваши уши. Они остаются в пользовании владельца</div>
+                        </div>
+                        <div class="advantage__third">
+                            <div class="advantage__third__image"></div>
+                            <div class="advantage__title">До 10 000 000 Б</div>
+                            <div class="advantage__description">Кредит на любые цели. Для каждого клиента стоимость органов рассчитывается индивидуально</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Попап / высплывающие окна  -->
+        <div id="popup" class="popup">
+            
+            <!-- Создаем тело всплывающего окна -->
+            <div class="popup__body">
+                <!-- Создаем оболочку контента -->
+                <div class="popup__content">
+                    <!-- Создаем кнопку для закрытия -->
+                    <a href="#header" class="popup__close close-popup"></a>
+                    <!-- И сам контент -->
+                    <div class="popup__text__container">
+                        
+                    </div>               
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://bobrarium.ru/cv" target="_blank"><div class="signature">Made by Klyukin Mikhail</div></a>
+        </footer>
+        <script src="js/credit_calc.js"></script>
+    </div>
+    <div class="loader">
+        <img src="./images/loading.gif" alt="">
+    </div>   
+</body>
+</html>
