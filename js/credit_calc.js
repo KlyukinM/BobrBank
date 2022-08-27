@@ -1,3 +1,35 @@
+// Показываем загруженный контент
+window.onload = function () {
+    let hideElement = document.querySelector('.hide')
+    let loadingPage = document.querySelector('.loader')
+
+    if (hideElement) {
+        hideElement.classList.remove('hide')
+    }
+
+    if (loadingPage) {
+        loadingPage.classList.add('hide')
+    }
+
+    // ПРИЛИПАЮЩЕЕ МЕНЮ
+
+    window.onscroll = function() {stickyMenu()}
+
+    let navbar = document.querySelector('.navigation')
+
+    if (navbar) {
+        let sticky = navbar.offsetTop
+
+        function stickyMenu() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky")
+        }
+        }
+    }
+}
+
 
 
 // КРЕДИТНЫЙ КАЛЬКУЛЯТОР
